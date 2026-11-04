@@ -269,7 +269,7 @@ section{position:relative;padding:clamp(84px,10vw,148px) var(--pad)}
 .stat span{display:block;margin-top:16px;font-size:13px;letter-spacing:.14em;color:var(--muted)}
 .awards{list-style:none}
 .awards li{
-  display:grid;grid-template-columns:76px 1fr auto;gap:clamp(16px,3vw,40px);align-items:center;
+  display:grid;grid-template-columns:minmax(76px,auto) 1fr auto;gap:clamp(16px,3vw,40px);align-items:center;
   padding:24px 0;border-top:1px solid var(--line);transition:padding .45s,background .45s;
 }
 .awards li.line{grid-template-columns:1fr}
@@ -451,7 +451,7 @@ body.reading{overflow:hidden}
 @media(max-width:1080px){
   .work,.work.rev{grid-template-columns:1fr;gap:26px}
   .work.rev figure{order:0}
-  .awards li{grid-template-columns:64px 1fr;row-gap:8px}
+  .awards li{grid-template-columns:minmax(64px,auto) 1fr;row-gap:8px}
   .awards .r{grid-column:2;text-align:left}
 }
 @media(max-width:860px){
@@ -722,6 +722,9 @@ body.reading{overflow:hidden}
   </div>
 
   <ul class="awards reveal">
+    <li><span class="y">2025</span><span class="t">「寻访石榴籽，浇灌团结花」三等奖</span></li>
+    <li><span class="y">2026</span><span class="t">「非遗青春季」全区大学生非遗短视频大赛　二等奖</span></li>
+    <li><span class="y">2026.05-2026.07</span><span class="t">呼和浩特市融媒体中心（青橙融媒）· 短视频编导</span></li>
     <li class="line"><span class="t">2024自治区励志奖学金，2025，2026国家励志奖学金</span></li>
     <li class="line"><span class="t">演出经纪人资格证</span></li>
   </ul>
